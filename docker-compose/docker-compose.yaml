@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  sunflower_micorservice_h2db:
+    image: osamaanofal/sunflower:h2db
+    ports:
+      - "8081:8081"
+    
+
+  sunflower_ui:
+    image: osamaanofal/sunflower-ui:bkp8081
+    ports:
+      - "4200:80"
